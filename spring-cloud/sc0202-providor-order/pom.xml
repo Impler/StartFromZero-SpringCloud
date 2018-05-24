@@ -8,8 +8,9 @@
 		<artifactId>spring-cloud</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>sc03-consumer</artifactId>
-	<name>sc03-consumer</name>
+	<artifactId>sc0202-providor-order</artifactId>
+	<name>sc0202-providor-order</name>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

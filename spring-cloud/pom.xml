@@ -18,11 +18,6 @@
 	</properties>
 
 	<dependencies>
-		<!--eureka server -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
-		</dependency>
 		<!-- spring boot test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -61,7 +56,8 @@
 	</repositories>
 	<modules>
 		<module>sc01-eureka-server</module>
-		<module>sc02-providor</module>
+		<module>sc0201-providor-user</module>
+		<module>sc0202-providor-order</module>
 		<module>sc03-consumer</module>
 	</modules>
 </project>

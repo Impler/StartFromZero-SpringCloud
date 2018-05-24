@@ -7,7 +7,7 @@ eureka:
   instance: 
     hostname: localhost
   client: 
-    # 是否将自己注册到Eureka Server上
+    # 是否将自己作为Client注册到Eureka Server上
     registerWithEureka: false
     # 是否从Eureka Server上获取注册信息
     fetchRegistry: false

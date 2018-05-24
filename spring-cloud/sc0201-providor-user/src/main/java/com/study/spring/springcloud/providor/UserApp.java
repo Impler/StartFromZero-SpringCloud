@@ -9,8 +9,11 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * 作为Eureka client
  */
 @EnableEurekaClient
-public class App {
+public class UserApp {
 	public static void main(String[] args) {
-		SpringApplication.run(App.class, args);
+		if (args.length == 0) {
+			args = new String[] {"--server.port=8100"};
+		}
+		SpringApplication.run(UserApp.class, args);
 	}
 }
