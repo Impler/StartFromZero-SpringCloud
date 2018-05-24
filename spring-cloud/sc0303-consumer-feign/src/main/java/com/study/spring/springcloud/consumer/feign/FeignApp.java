@@ -1,19 +1,15 @@
-package com.study.spring.springcloud.providor;
+package com.study.spring.springcloud.consumer.feign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
-/**
- * 作为Eureka client
- */
 @EnableEurekaClient
-public class UserApp {
+@EnableFeignClients
+public class FeignApp {
 	public static void main(String[] args) {
-		if (args.length == 0) {
-			args = new String[] {"--server.port=8101"};
-		}
-		SpringApplication.run(UserApp.class, args);
+		SpringApplication.run(FeignApp.class, args);
 	}
 }
