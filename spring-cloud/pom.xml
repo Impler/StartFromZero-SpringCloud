@@ -58,6 +58,6 @@
 		<module>sc01-eureka-server</module>
 		<module>sc0201-providor-user</module>
 		<module>sc0202-providor-order</module>
-		<module>sc03-consumer</module>
+		<module>sc0301-consumer</module>
 	</modules>
 </project>

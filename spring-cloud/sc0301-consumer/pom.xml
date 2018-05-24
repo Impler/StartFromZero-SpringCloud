@@ -8,8 +8,8 @@
 		<artifactId>spring-cloud</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>sc03-consumer</artifactId>
-	<name>sc03-consumer</name>
+	<artifactId>sc0301-consumer</artifactId>
+	<name>sc0301-consumer</name>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
