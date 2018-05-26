@@ -12,7 +12,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class UserApp {
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			args = new String[] {"--server.port=8101"};
+			args = new String[] {"--server.port=8100"};
 		}
 		SpringApplication.run(UserApp.class, args);
 	}
