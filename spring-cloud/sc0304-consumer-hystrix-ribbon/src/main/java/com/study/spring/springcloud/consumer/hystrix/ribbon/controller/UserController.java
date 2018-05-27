@@ -24,5 +24,7 @@ public class UserController {
 	
 	public Map<String, Object> fallfackMethod(){
 		Map<String, Object> defaults = new HashMap<String, Object>();
+		defaults.put("errMsg", "服务暂时不可用");
+		return defaults;
 	}
 }

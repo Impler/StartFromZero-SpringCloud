@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8600
+spring:
+  application:
+    name: consumer-hystrix-feign
+app:
+  serviceUrl: http://providor-user/getUser
