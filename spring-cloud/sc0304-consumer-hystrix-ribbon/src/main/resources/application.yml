@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8500
+spring:
+  application:
+    name: consumer-hystrix-ribbon
+app:
+  serviceUrl: http://providor-user/getUser

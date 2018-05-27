@@ -61,5 +61,6 @@
 		<module>sc0301-consumer</module>
     <module>sc0302-consumer-ribbon</module>
     <module>sc0303-consumer-feign</module>
-  </modules>
+    <module>sc0304-consumer-hystrix-ribbon</module>
+	</modules>
 </project>
