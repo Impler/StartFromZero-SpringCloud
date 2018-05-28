@@ -4,6 +4,10 @@ eureka:
       defaultZone: http://localhost:8888/eureka/
 server:
   port: 8600
+## 打开feign自带断路器
+feign:
+  hystrix:
+    enabled: true
 spring:
   application:
     name: consumer-hystrix-feign

@@ -59,9 +59,10 @@
 		<module>sc0201-providor-user</module>
 		<module>sc0202-providor-order</module>
 		<module>sc0301-consumer</module>
-    <module>sc0302-consumer-ribbon</module>
-    <module>sc0303-consumer-feign</module>
-    <module>sc0304-consumer-hystrix-ribbon</module>
-    <module>sc0305-consumer-hystrix-feign</module>
+	    <module>sc0302-consumer-ribbon</module>
+	    <module>sc0303-consumer-feign</module>
+	    <module>sc0304-consumer-hystrix-ribbon</module>
+	    <module>sc0305-consumer-hystrix-feign</module>
+	    <module>sc04-zuul</module>
 	</modules>
 </project>

@@ -20,5 +20,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
 		</dependency>
+		<!-- hystrix数据监控图形化界面 -->
+		<dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+		</dependency>
 	</dependencies>
 </project>

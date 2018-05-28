@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8700
+spring:
+  application:
+    name: consumer-zuul
+zuul:
+  routes:
+    apiA:
+      path: /api-user/**
+      service-id: consumer-ribbon
+    apiB:
+      path: /api-order/**
+      service-id: consumer-ribbon
