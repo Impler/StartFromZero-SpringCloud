@@ -10,7 +10,6 @@
 	</parent>
 	<artifactId>sc01-eureka-server</artifactId>
 	<name>sc01-eureka-server</name>
-
 	<dependencies>
 		<!--eureka server -->
 		<dependency>
