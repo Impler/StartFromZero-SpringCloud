@@ -1,15 +1,28 @@
+
 # 配置web服务端口
 server:
-  port: 8888
-
+  port: 8651
 # 配置eureka相关信息
-eureka: 
-  instance: 
-    hostname: localhost
-  client: 
-    # 是否将自己作为Client注册到Eureka Server上
-    registerWithEureka: false
-    # 是否从Eureka Server上获取注册信息
-    fetchRegistry: false
-    serviceUrl: 
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+eureka:
+  instance:
+    #注册中心显示的名称IP:端口  默认 机器主机名:应用名称:应用端口
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    #设置微服务调用地址为IP优先（缺省为false）
+#    prefer-ip-address: true
+    appname: eureka-server
+  server:
+    #关闭自我保护模式（缺省为打开）生产环境需要打开
+    enable-self-preservation: true
+    # 续期时间，即扫描失效服务的间隔时间（缺省为60*1000ms）
+    eviction-interval-timer-in-ms: 60000
+  client:
+    #设置是否将自己作为客户端注册到注册中心（缺省true,单节点设置成false，集群需要互相同步)
+    register-with-eureka: true
+    # 设置是否从注册中心获取注册信息（缺省true,单节点设置成false，集群需要互相同步）
+    fetch-registry: true
+    serviceUrl:
+      # 注册的地址
+      defaultZone: http://192.168.32.10:8651/eureka/,http://192.168.32.10:8652/eureka/,http://192.168.32.10:8653/eureka/
+spring:
+  application:
+    name: eureka-server
